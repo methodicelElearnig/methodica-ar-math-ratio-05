@@ -469,19 +469,19 @@
         <div class="s2-eq-diagram" id="s2-eq-diagram">
           <div class="s2-eq-formula">
             <div class="s2-eq-num-col">
-              <div class="s2-eq-target" id="s2-target-known" ondragover="s2EDragOver(event,'s2-target-known')" ondragleave="s2EDragLeave(event,'s2-target-known')" ondrop="s2EDrop(event,'s2-target-known')"></div>
+              <div class="s2-eq-target" id="s2-target-known"></div>
               <span class="frac"><span class="frac-num" id="s2-eq-n4">4</span><span class="frac-den" id="s2-eq-n7">7</span></span>
-              <div class="s2-eq-target" id="s2-target-total" ondragover="s2EDragOver(event,'s2-target-total')" ondragleave="s2EDragLeave(event,'s2-target-total')" ondrop="s2EDrop(event,'s2-target-total')"></div>
+              <div class="s2-eq-target" id="s2-target-total"></div>
             </div>
             <span>·</span>
             <div class="s2-eq-num-col">
-              <div class="s2-eq-target" id="s2-target-groupsize" ondragover="s2EDragOver(event,'s2-target-groupsize')" ondragleave="s2EDragLeave(event,'s2-target-groupsize')" ondrop="s2EDrop(event,'s2-target-groupsize')"></div>
+              <div class="s2-eq-target" id="s2-target-groupsize"></div>
               <span id="s2-eq-n70">70</span>
             </div>
             <span>=</span>
             <div class="s2-eq-num-col">
               <span id="s2-eq-n40">40</span>
-              <div class="s2-eq-target" id="s2-target-knownsize" ondragover="s2EDragOver(event,'s2-target-knownsize')" ondragleave="s2EDragLeave(event,'s2-target-knownsize')" ondrop="s2EDrop(event,'s2-target-knownsize')"></div>
+              <div class="s2-eq-target" id="s2-target-knownsize"></div>
             </div>
           </div>
         </div>
@@ -496,11 +496,11 @@
                 <img class="gesture-hint-hand" src="../unit-assets/img/gesture-hand-cursor.svg" alt="">
               </div>
             </div>
-            <div class="s2-ddq-card" id="s2-drag-groupsize" draggable="true" ondragstart="s2EDragStart(event,'s2-drag-groupsize')" ondragend="s2EDragEnd(event)">حجم المجموعة</div>
+            <div class="s2-ddq-card" id="s2-drag-groupsize">حجم المجموعة</div>
           </div>
-          <div class="s2-ddq-slot"><div class="s2-ddq-card" id="s2-drag-knownsize" draggable="true" ondragstart="s2EDragStart(event,'s2-drag-knownsize')" ondragend="s2EDragEnd(event)">حجم الجزء المعلوم لنا بحسب النسبة</div></div>
-          <div class="s2-ddq-slot"><div class="s2-ddq-card" id="s2-drag-known" draggable="true" ondragstart="s2EDragStart(event,'s2-drag-known')" ondragend="s2EDragEnd(event)">الجزء المعلوم لنا بحسب النسبة</div></div>
-          <div class="s2-ddq-slot"><div class="s2-ddq-card" id="s2-drag-total" draggable="true" ondragstart="s2EDragStart(event,'s2-drag-total')" ondragend="s2EDragEnd(event)">مجموع الأجزاء بحسب النسبة</div></div>
+          <div class="s2-ddq-slot"><div class="s2-ddq-card" id="s2-drag-knownsize">حجم الجزء المعلوم لنا بحسب النسبة</div></div>
+          <div class="s2-ddq-slot"><div class="s2-ddq-card" id="s2-drag-known">الجزء المعلوم لنا بحسب النسبة</div></div>
+          <div class="s2-ddq-slot"><div class="s2-ddq-card" id="s2-drag-total">مجموع الأجزاء بحسب النسبة</div></div>
         </div>
 
         <button class="btn-continue s2-check-btn" id="s2-e-check" type="button" disabled onclick="s2ECheck()">هل إجابتي صحيحة؟</button>
@@ -995,6 +995,7 @@
 <script src="../unit-js/30-nav.js?v=20261007a"></script>
 <script src="../unit-js/32-progress.js?v=20261007a"></script>
 <script src="../unit-js/35-questions.js?v=20261007a"></script>
+<script src="../unit-js/30-pointer-dnd.js?v=20261007a"></script>
 <script src="../unit-js/40-resume.js?v=20261007a"></script>
 <script src="../unit-js/45-resume-part.js?v=20261007a"></script>
 <script src="../unit-js/50-loader.js?v=20261007a"></script>
