@@ -411,36 +411,36 @@
          aria-modal="true"
          aria-labelledby="report-modal-title">
       <div class="report-modal-box">
-        <button class="report-close-btn" onclick="tryCloseReportModal()" aria-label="סגור">&#10005;</button>
-        <h2 class="report-modal-title" id="report-modal-title">דיווח על בעיה</h2>
-        <p class="report-modal-body">משהו לא ברור או לא עובד כמו שצריך?<br>ספרו לנו מה קרה כדי שנטפל.</p>
+        <button class="report-close-btn" onclick="tryCloseReportModal()" aria-label="إغلاق">&#10005;</button>
+        <h2 class="report-modal-title" id="report-modal-title">الإبلاغ عن مشكلة</h2>
+        <p class="report-modal-body">هل هناك شيء غير واضح أو لا يعمل كما يجب؟<br>أخبرونا بما حدث لنقوم بمعالجته.</p>
 
         <div class="report-field">
-          <label class="report-label" for="report-type"><span class="required-star">*</span> מה סוג הבעיה</label>
+          <label class="report-label" for="report-type"><span class="required-star">*</span> ما نوع المشكلة</label>
                     <div class="report-custom-select" id="report-type-wrapper">
             <button class="report-select-btn is-placeholder" type="button" aria-haspopup="listbox" aria-expanded="false">
-              <span class="report-select-value">בחרו סוג בעיה</span>
+              <span class="report-select-value">اختاروا نوع المشكلة</span>
             </button>
             <ul class="report-select-list" role="listbox" hidden>
-              <li class="report-select-option" data-value="technical" role="option">תקלה טכנית או שמשהו לא עובד</li>
-              <li class="report-select-option" data-value="unclear" role="option">משהו לא ברור לי</li>
-              <li class="report-select-option" data-value="other" role="option">אחר</li>
+              <li class="report-select-option" data-value="technical" role="option">عطل تقني أو أن شيئًا ما لا يعمل</li>
+              <li class="report-select-option" data-value="unclear" role="option">هناك شيء غير واضح بالنسبة لي</li>
+              <li class="report-select-option" data-value="other" role="option">أخرى</li>
             </ul>
             <input type="hidden" id="report-type" value="">
           </div>
-          <span class="report-field-error" id="report-type-error" hidden>בחרו את סוג הבעיה</span>
+          <span class="report-field-error" id="report-type-error" hidden>اختاروا نوع المشكلة</span>
         </div>
 
         <div class="report-field">
-          <label class="report-label" for="report-text"><span class="required-star">*</span> מה קרה?</label>
-          <textarea class="report-textarea" id="report-text" maxlength="250" rows="4" placeholder="פרטו מה קרה כדי שנוכל להבין את הבעיה" onblur="reportTextBlur()"></textarea>
-          <span class="report-field-error" id="report-text-error" hidden>כתבו מה קרה</span>
+          <label class="report-label" for="report-text"><span class="required-star">*</span> ماذا حدث؟</label>
+          <textarea class="report-textarea" id="report-text" maxlength="250" rows="4" placeholder="وضّحوا ما الذي حدث لكي نتمكن من فهم المشكلة" onblur="reportTextBlur()"></textarea>
+          <span class="report-field-error" id="report-text-error" hidden>اكتبوا ما الذي حدث</span>
           <span class="report-char-count" id="report-char-count">0 / 250</span>
         </div>
 
         <div class="report-actions">
-          <button class="report-cancel-btn" onclick="tryCloseReportModal()">ביטול</button>
-          <button class="report-submit-btn" onclick="submitReport()" disabled>שליחת דיווח</button>
+          <button class="report-cancel-btn" onclick="tryCloseReportModal()">إلغاء</button>
+          <button class="report-submit-btn" onclick="submitReport()" disabled>إرسال البلاغ</button>
         </div>
       </div>
     </div>
@@ -451,11 +451,11 @@
          aria-modal="true"
          aria-labelledby="confirm-modal-title">
       <div class="report-modal-box report-confirm-box">
-        <h2 class="report-modal-title" id="confirm-modal-title">בטוח לסגור את החלון?</h2>
-        <p class="report-modal-body">בלחיצה על סגירה לא יישלח דיווח</p>
+        <h2 class="report-modal-title" id="confirm-modal-title">هل أنت متأكد من إغلاق النافذة؟</h2>
+        <p class="report-modal-body">عند الضغط على إغلاق لن يتم إرسال بلاغ</p>
         <div class="report-actions">
-          <button class="report-cancel-btn" onclick="forceCloseReportModal()">סגור חלון</button>
-          <button class="report-submit-btn" onclick="backToReportForm()">אני רוצה לדווח</button>
+          <button class="report-cancel-btn" onclick="forceCloseReportModal()">إغلاق النافذة</button>
+          <button class="report-submit-btn" onclick="backToReportForm()">أريد الابلاغ</button>
         </div>
       </div>
     </div>
@@ -466,10 +466,10 @@
          aria-modal="true"
          aria-labelledby="thanks-modal-title">
       <div class="report-modal-box report-confirm-box">
-        <h2 class="report-modal-title" id="thanks-modal-title">הדיווח נשלח, תודה!</h2>
-        <p class="report-modal-body">קיבלנו את הדיווח שלכם ונטפל בו בהקדם.</p>
+        <h2 class="report-modal-title" id="thanks-modal-title">تم إرسال البلاغ، شكرًا لك!</h2>
+        <p class="report-modal-body">تلقّينا بلاغكم وسنعالجه في أقرب وقت.</p>
         <div class="report-actions">
-          <button class="report-submit-btn" onclick="closeReportThanks()">סגירה</button>
+          <button class="report-submit-btn" onclick="closeReportThanks()">إغلاق</button>
         </div>
       </div>
     </div>

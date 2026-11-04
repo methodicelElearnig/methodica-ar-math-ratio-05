@@ -47,9 +47,9 @@ var REPORT_FIELDS = {
 /* Problem-type labels. Module scope because both the custom select and submitReport need them —
    the form records the human-readable label, not the internal key. */
 var REPORT_TYPE_LABELS = {
-  'technical': 'תקלה טכנית או שמשהו לא עובד',
-  'unclear':   'משהו לא ברור לי',
-  'other':     'אחר'
+  'technical': 'عطل تقني أو أن شيئًا ما لا يعمل',
+  'unclear':   'هناك شيء غير واضح بالنسبة لي',
+  'other':     'أخرى'
 };
 
 function openReportModal() {
@@ -90,7 +90,7 @@ function showReportThanks() {
   var thanks = document.getElementById('report-thanks-modal');
   if (thanks) {
     thanks.removeAttribute('hidden');
-    announce('הדיווח נשלח, תודה');
+    announce('تم إرسال البلاغ، شكرًا لك');
     var btn = thanks.querySelector('.report-submit-btn');
     if (btn) setTimeout(function(){ btn.focus(); }, 40);
   }
@@ -206,7 +206,7 @@ function initReportModal() {
   /* Custom select for report-type */
   (function() {
     var LABELS = REPORT_TYPE_LABELS;
-    var PLACEHOLDER = 'בחרו סוג בעיה';
+    var PLACEHOLDER = 'اختاروا نوع المشكلة';
     var wrapper = document.getElementById('report-type-wrapper');
     if (!wrapper) return;
     var btn        = wrapper.querySelector('.report-select-btn');
