@@ -27,7 +27,7 @@ function resetScreenState0() {
    (משולש שווה-שוקיים ABC). חלק א' (VIQ, 3 קלטים) → חלק ב' (SCQ, 3
    אפשרויות). תמונת המשולש קבועה בצד שמאל לכל אורך שני החלקים.
    ========================================================= */
-const VIQ_CFG_S1P1_BODY = 'أ. مجموع زوايا المثلث هو <span dir="ltr">°180</span>.<br>المثلث ABC متساوي الساقين. النسبة بين زاوية الرأس ومجموع زاويتَيّ القاعدة هي 3 : 1.<br>يمكننا إيجاد مقدار زاوية الرأس <span dir="ltr"><span class="frac"><span class="frac-num">1</span><span class="frac-den">4</span></span> · 180 = °45</span><br>لذلك <span dir="ltr"> ∢A = 45°</span>.<br>بما أن الزاويتين المتبقيتين متساويتان، نقسم 135 درجة على 2 ونجد أن مقدار كل واحدة منهما 67.5 درجة‎.';
+const VIQ_CFG_S1P1_BODY = 'أ. مجموع زوايا المثلث هو <span dir="ltr">180°</span>.<br>المثلث ABC متساوي الساقين. النسبة بين زاوية الرأس ومجموع زاويتَيّ القاعدة هي 3 : 1.<br>يمكننا إيجاد مقدار زاوية الرأس <span dir="ltr"><span class="frac"><span class="frac-num">1</span><span class="frac-den">4</span></span> · 180 = 45°</span><br>لذلك <span dir="ltr"> ∢A = 45°</span>.<br>بما أن الزاويتين المتبقيتين متساويتان، نقسم 135 درجة على 2 ونجد أن مقدار كل واحدة منهما 67.5 درجة‎.';
 
 VIQ_CFG_REGISTER('s1p1', {
   xapi: ['001', 'q1'],
@@ -39,7 +39,7 @@ VIQ_CFG_REGISTER('s1p1', {
 function s1P1OnInput() { viqOnInput('s1p1'); }
 function s1P1Check() { viqCheck('s1p1'); }
 
-const SCQ_CFG_S1P2_BODY = 'ب. نجد مجموع زاويتَيّ القاعدة <span dir="ltr"><span class="frac"><span class="frac-num">3</span><span class="frac-den">4</span></span> · 180 = °135</span><br>بما أنهما متساويتان، فإن مقدار كل زاوية هو <span dir="ltr">135 ÷ 2 = °67.5</span>، لذلك <span dir="ltr"><span dir="ltr">∢B = 67.5°</span></span>.<br>ادّعاء المهندس المعماري الشاب غير صحيح.';
+const SCQ_CFG_S1P2_BODY = 'ب. نجد مجموع زاويتَيّ القاعدة <span dir="ltr"><span class="frac"><span class="frac-num">3</span><span class="frac-den">4</span></span> · 180 = 135°</span><br>بما أنهما متساويتان، فإن مقدار كل زاوية هو <span dir="ltr">135 ÷ 2 = 67.5°</span>، لذلك <span dir="ltr"><span dir="ltr">∢B = 67.5°</span></span>.<br>ادّعاء المهندس المعماري الشاب غير صحيح.';
 SCQ_CFG_REGISTER('s1p2', {
   xapi: ['001', 'q2'],
   containerSel: '#s1-part-2',
@@ -81,7 +81,7 @@ function resetScreenState1() {
    id="s2". דיאגרמת ACD/ADB עם שני קלטים הממוקמים כ-overlay אבסולוטי
    מתחת לדיאגרמה. אין רמז.
    ========================================================= */
-const VIQ_CFG_S2_BODY = 'النسبة بين مساحة المثلث‎ ACD ‎ومساحة المثلث‎ ABD ‎هي <br>3 : 1. <br> مساحة‎ ABC ‎هي <span dir="ltr">ABC = <span dir="rtl">64 سم مربع</span></span>.<br>نحسب مساحتَيّ المثلثين:<br>مساحة ACD هي <span dir="ltr"><span class="frac"><span class="frac-num">3</span><span class="frac-den">4</span></span> · 64 = 48</span><br>ومساحة هي <span dir="ltr"><span class="frac"><span class="frac-num">1</span><span class="frac-den">4</span></span> · 64 = 16</span>.<br>AE يساوي 8 سم، وهو ارتفاع في المثلث ACD، لذلك:<br><span dir="ltr"><span class="frac"><span class="frac-num">8·CD</span><span class="frac-den">2</span></span> = 48</span>، <span dir="ltr">4CD = 48</span>، <span dir="ltr">لذلك CD = <span dir="rtl">12 سم</span></span>.<br>للمثلثان (ACD و-ABD) يوجد نفس الارتفاع.<br>النسبة بين الأضلاع التي تتقاطع مع الارتفاع ستكون مساوية للنسبة بين المساحتين (3 : 1).<br>لذلك – <span dir="ltr">BD = 12 : 3 = 4</span>.';
+const VIQ_CFG_S2_BODY = 'النسبة بين مساحة المثلث‎ ACD ‎ومساحة المثلث‎ ABD ‎هي <br>3 : 1. <br> مساحة‎ ABC ‎هي <span dir="ltr">ABC = <span dir="rtl">64 سم مربع</span></span>.<br>نحسب مساحتَيّ المثلثين:<br>مساحة ACD هي <span dir="ltr"><span class="frac"><span class="frac-num">3</span><span class="frac-den">4</span></span> · 64 = 48</span><br>ومساحة ABD هي <span dir="ltr"><span class="frac"><span class="frac-num">1</span><span class="frac-den">4</span></span> · 64 = 16</span>.<br>AE يساوي 8 سم، وهو ارتفاع في المثلث ACD، لذلك:<br><span dir="ltr"><span class="frac"><span class="frac-num">8·CD</span><span class="frac-den">2</span></span> = 48</span>، <span dir="ltr">4CD = 48</span>، <span dir="ltr">لذلك CD = <span dir="rtl">12 سم</span></span>.<br>للمثلثان (ACD و-ABD) يوجد نفس الارتفاع.<br>النسبة بين الأضلاع التي تتقاطع مع الارتفاع ستكون مساوية للنسبة بين المساحتين (3 : 1).<br>لذلك – <span dir="ltr">BD = 12 : 3 = 4</span>.';
 VIQ_CFG_REGISTER('s2', {
   xapi: ['002', 'q1'],
   inputs: ['s2-cd', 's2-db'], correct: [12, 4], checkBtn: 's2-continue', feedbox: 's2-feedbox', revealBtn: 's2-reveal-btn', nextScreen: 3,
@@ -107,7 +107,7 @@ function resetScreenState2() {
    ערבוב-צבעים (יחס 2:3:5). חלק א' (VIQ, 3 קלטים) → חלק ב' (SCQ, 4
    אפשרויות). זהו המסך האחרון בסיין.
    ========================================================= */
-const VIQ_CFG_S3P1_BODY = 'أ. نرمز بـ<span dir="ltr">x</span> إلى إجمالي لترات طلاء "الأخضر الزيتوني" الناتج. مجموع أجزاء النسبة هو: 5 + 3 + 2 = 10. لذلك يشكل اللون الأسود 2/10 من الخليط. نرمز بـ<span dir="ltr">x</span> إلى كمية لترات الخليط ونبني معادلة: <span dir="ltr"><span class="frac"><span class="frac-num">2</span><span class="frac-den">10</span></span> · x = 12</span><br>نقسم على <span class="frac"><span class="frac-num">2</span><span class="frac-den">10</span></span> ونحصل على: <span dir="ltr">x = 60</span>.<br>لذلك، يوجد 60 لترًا من الدهان الأخضر الزيتوني.<br>يشكل اللون الأصفر <span class="frac"><span class="frac-num">5</span><span class="frac-den">10</span></span> من الخليط. وهذا نصف الخليط، لذلك يوجد 30 لترًا من الدهان الأصفر في الخليط.<br>الاستنتاج: يوجد <span dir="ltr">60 − 12 − 30 = <span dir="rtl">18 لترًا</span></span><br>من الدهان الأزرق في الخليط.';
+const VIQ_CFG_S3P1_BODY = 'أ. نرمز بـ<span dir="ltr">x</span> إلى إجمالي لترات طلاء "الأخضر الزيتوني" الناتج.<br>مجموع أجزاء النسبة هو: <span dir="ltr">5 + 3 + 2 = 10</span><br>لذلك يشكل اللون الأسود <span class="frac"><span class="frac-num">2</span><span class="frac-den">10</span></span> من الخليط.<br>نرمز بـ<span dir="ltr">x</span> إلى كمية لترات الخليط ونبني معادلة: <span dir="ltr"><span class="frac"><span class="frac-num">2</span><span class="frac-den">10</span></span> · x = 12</span><br>نقسم على <span class="frac"><span class="frac-num">2</span><span class="frac-den">10</span></span> ونحصل على: <span dir="ltr">x = 60</span>.<br>لذلك، يوجد 60 لترًا من الدهان الأخضر الزيتوني.<br>يشكل اللون الأصفر <span class="frac"><span class="frac-num">5</span><span class="frac-den">10</span></span> من الخليط. وهذا نصف الخليط، لذلك يوجد 30 لترًا من الدهان الأصفر في الخليط.<br>الاستنتاج: يوجد <span dir="ltr">60 − 12 − 30 = <span dir="rtl">18 لترًا</span></span><br>من الدهان الأزرق في الخليط.';
 
 VIQ_CFG_REGISTER('s3p1', {
   xapi: ['003', 'q1'],

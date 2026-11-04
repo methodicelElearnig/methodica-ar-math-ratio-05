@@ -45,9 +45,9 @@ function resetScreenState1() {
 VIQ_CFG_REGISTER('s2p1', {
   xapi: ['001', 'q1'],
   inputs: ['s2-p1-input'], correct: [216], checkBtn: 's2-p1-check', feedbox: 's2-p1-feedbox', revealBtn: 's2-p1-reveal-btn', nextScreen: null,
-  correctMsg: { title: 'كل الاحترام، أجبتم بشكل صحيح‎!', body: 'النسبة بين AB و-AE هي 2 : 1، لذلك <span dir="ltr">AE = 10</span>.<br>نحسب مساحة المستطيل ‎ AEDB:  AEDB:<br><span dir="ltr"> 20 ⋅ 10 = 200</span>.<br>نحسب مساحة المربع GHCD:<br><span dir="ltr"> 4 ⋅ 4 = 16</span>.<br>مساحة قطعة الأرض كلها هي <span dir="ltr">200 + 16 = <span dir="rtl">216 متر مربع</span></span>.' },
+  correctMsg: { title: 'كل الاحترام، أجبتم بشكل صحيح‎!', body: 'النسبة بين AB و-AE هي 2 : 1، لذلك <span dir="ltr">AE = 10</span>.<br>نحسب مساحة المستطيل AEDB:<br><span dir="ltr"> 20 ⋅ 10 = 200</span>.<br>نحسب مساحة المربع GHCD:<br><span dir="ltr"> 4 ⋅ 4 = 16</span>.<br>مساحة قطعة الأرض كلها هي <span dir="ltr">200 + 16 = <span dir="rtl">216 متر مربع</span></span>.' },
   wrongOnce: { title: 'غير دقيق.', body: 'حاولوا مرة أخرى.' },
-  wrongFinal: { title: 'أخطأتم. لا بأس، نتعلّم من الأخطاء أيضًا', body: 'النسبة بين AB و-AE هي 2 : 1، لذلك <span dir="ltr">AE = 10</span>.<br>نحسب مساحة المستطيل ‎ AEDB:  AEDB:<br><span dir="ltr"> 20 ⋅ 10 = 200</span>.<br>نحسب مساحة المربع GHCD:<br><span dir="ltr"> 4 ⋅ 4 = 16</span>.<br>مساحة قطعة الأرض كلها هي <span dir="ltr">200 + 16 = <span dir="rtl">216 متر مربع</span></span>.' },
+  wrongFinal: { title: 'أخطأتم. لا بأس، نتعلّم من الأخطاء أيضًا', body: 'النسبة بين AB و-AE هي 2 : 1، لذلك <span dir="ltr">AE = 10</span>.<br>نحسب مساحة المستطيل AEDB:<br><span dir="ltr"> 20 ⋅ 10 = 200</span>.<br>نحسب مساحة المربع GHCD:<br><span dir="ltr"> 4 ⋅ 4 = 16</span>.<br>مساحة قطعة الأرض كلها هي <span dir="ltr">200 + 16 = <span dir="rtl">216 متر مربع</span></span>.' },
   onDone: function () {
     practiceProgress.questions[0].state = (viqState.s2p1 && viqState.s2p1.outcome === 'fail') ? 'incorrect' : 'correct';
     setCurrentQuestion(practiceProgress, 1);

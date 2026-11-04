@@ -435,7 +435,7 @@ function s2P1Check() {
     reportQ(['002', 'q' + r], s2TfState.selected[r] === s2TfCorrect[r], allCorrect || s2TfState.attempts >= 2,
       xapiAnswerText(document.getElementById('s2-r' + r + '-' + s2TfState.selected[r])));
   });
-  const explain = 'الزاويتان‎ α ‎و-β ‎ متجاورتان، ولذلك مجموعهما هو °180، النسبة بين‎ α ‎و-β ‎ هي 7 : 2.<br>لذلك، مقدار الزاوية‎ β ‎هو <span dir="">°140 = 180 · <span class="frac"><span class="frac-num">7</span><span class="frac-den">9</span></span></span>.<br>مقدار الزاوية‎ α ‎هو °40، لأن:<br><span dir="ltr">°180 − °40 = °140</span>.';
+  const explain = 'الزاويتان‎ α ‎و-β ‎ متجاورتان، ولذلك مجموعهما هو 180°، النسبة بين‎ α ‎و-β ‎ هي 7 : 2.<br>لذلك، مقدار الزاوية‎ β ‎هو <span dir="">140° = 180 · <span class="frac"><span class="frac-num">7</span><span class="frac-den">9</span></span></span>.<br>مقدار الزاوية‎ α ‎هو 40°، لأن:<br><span dir="ltr">180° − 40° = 140°</span>.';
 
   if (allCorrect) {
     [1, 2, 3, 4].forEach(function (r) {
