@@ -7,6 +7,12 @@
 <link rel="stylesheet" href="../unit-css/common.css?v=20261007a">
 <link rel="stylesheet" href="styles.css?v=20261007a">
 <link rel="stylesheet" href="../unit-css/25-report.css?v=20261007a">
+<!-- Resume (2026-11-03): the CDN library is requested from the head, before any image, so the
+     restore does not wait for the media; the hrefs must equal what 50-loader.js builds (no ?v=,
+     no crossorigin) or the browser fetches them twice. -->
+<link rel="preload" as="script" fetchpriority="high" href="https://lomdot.education.gov.il/metodica/720active/common/xapiwrapper.min.js">
+<link rel="preload" as="script" fetchpriority="high" href="https://lomdot.education.gov.il/metodica/720active/common/xapi-720-k.js">
+<link rel="preconnect" href="https://kata.cet.ac.il">
 </head>
 <body>
 <!-- Boot cover (resume): hides the first screen until it is known which screen to draw.
@@ -16,6 +22,9 @@
 <div id="boot-cover" style="position:fixed;inset:0;z-index:9999;background:#ffffff"></div>
 <script>
 (function () {
+  /* Raised here, by the markup, when the platform launched the page: bootXAPI raises it too, but
+     from the last script tag, which on a cold cache runs after this net's 800 ms (2026-11-03). */
+  if (/[?&]registration=/.test(location.search)) window.__resumeInFlight = true;
   var t0 = Date.now();
   function tick() {
     var c = document.getElementById('boot-cover');
@@ -115,7 +124,7 @@
                 <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
               </svg>
             </button>
-            <img class="oly-delegation-img" src="assets/images/משלחת-א.jpg" alt="البعثة أ">
+            <img loading="lazy" class="oly-delegation-img" src="assets/images/משלחת-א.jpg" alt="البعثة أ">
           </div>
         </div>
         <span class="oly-delegation-label">البعثة أ</span>
@@ -131,7 +140,7 @@
                 <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
               </svg>
             </button>
-            <img class="oly-delegation-img" src="assets/images/משלחת-ב.jpg" alt="البعثة ب">
+            <img loading="lazy" class="oly-delegation-img" src="assets/images/משלחת-ב.jpg" alt="البعثة ب">
           </div>
         </div>
         <span class="oly-delegation-label">البعثة ب</span>
@@ -321,7 +330,7 @@
                     <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
                   </svg>
                 </button>
-                <img class="s2-hook-img" src="assets/images/boy-and-girl-planting.jpg" alt="علاء وأمل في حديقة خضار الجدة">
+                <img loading="lazy" class="s2-hook-img" src="assets/images/boy-and-girl-planting.jpg" alt="علاء وأمل في حديقة خضار الجدة">
               </div>
             </div>
           </div>
@@ -403,7 +412,7 @@
                     <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
                   </svg>
                 </button>
-                <img class="s2-fb-img" src="assets/images/radish-cauliflower.jpg" alt="فجل وخس في الحديقة، مرتبان في صفوف">
+                <img loading="lazy" class="s2-fb-img" src="assets/images/radish-cauliflower.jpg" alt="فجل وخس في الحديقة، مرتبان في صفوف">
               </div>
             </div>
           </div>
@@ -437,7 +446,7 @@
                       <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
                   </button>
-                  <img class="s2-hook-img" src="assets/images/boy-and-girl-planting-2.jpg" alt="علاء وأمل في حديقة خضار الجدة">
+                  <img loading="lazy" class="s2-hook-img" src="assets/images/boy-and-girl-planting-2.jpg" alt="علاء وأمل في حديقة خضار الجدة">
                 </div>
               </div>
             </div>
@@ -532,7 +541,7 @@
         <p class="s3-line s3-line--sub">لكن قبل ذلك، تعالوا نحلّ تمرينًا واحدًا معًا</p>
       </div>
       <div class="s3-avatar-wrap">
-        <video class="s3-avatar" id="s3-avatar" src="assets/videos/yellow-avatar-and-turquise-avatar.mp4" autoplay loop muted playsinline></video>
+        <video class="s3-avatar" id="s3-avatar" autoplay loop muted playsinline></video>
       </div>
     </div>
 
@@ -841,7 +850,7 @@
                 <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
               </svg>
             </button>
-            <img class="s6-angle-diagram" src="assets/images/angle-diagram-ratio.png" alt="رسم للزاوية‎ ABC ‎ومقدارها 90 درجة، مقسمة إلى الزاوية ألفا (العليا) والزاوية بيتا (السفلى)">
+            <img loading="lazy" class="s6-angle-diagram" src="assets/images/angle-diagram-ratio.png" alt="رسم للزاوية‎ ABC ‎ومقدارها 90 درجة، مقسمة إلى الزاوية ألفا (العليا) والزاوية بيتا (السفلى)">
           </div>
         </div>
       </div>

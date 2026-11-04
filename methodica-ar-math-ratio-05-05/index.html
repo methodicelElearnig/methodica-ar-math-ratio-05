@@ -7,6 +7,12 @@
 <link rel="stylesheet" href="../unit-css/common.css?v=20261007a">
 <link rel="stylesheet" href="styles.css?v=20261007a">
 <link rel="stylesheet" href="../unit-css/25-report.css?v=20261007a">
+<!-- Resume (2026-11-03): the CDN library is requested from the head, before any image, so the
+     restore does not wait for the media; the hrefs must equal what 50-loader.js builds (no ?v=,
+     no crossorigin) or the browser fetches them twice. -->
+<link rel="preload" as="script" fetchpriority="high" href="https://lomdot.education.gov.il/metodica/720active/common/xapiwrapper.min.js">
+<link rel="preload" as="script" fetchpriority="high" href="https://lomdot.education.gov.il/metodica/720active/common/xapi-720-k.js">
+<link rel="preconnect" href="https://kata.cet.ac.il">
 </head>
 <body>
 <!-- Boot cover (resume): hides the first screen until it is known which screen to draw.
@@ -16,6 +22,9 @@
 <div id="boot-cover" style="position:fixed;inset:0;z-index:9999;background:#ffffff"></div>
 <script>
 (function () {
+  /* Raised here, by the markup, when the platform launched the page: bootXAPI raises it too, but
+     from the last script tag, which on a cold cache runs after this net's 800 ms (2026-11-03). */
+  if (/[?&]registration=/.test(location.search)) window.__resumeInFlight = true;
   var t0 = Date.now();
   function tick() {
     var c = document.getElementById('boot-cover');
@@ -97,7 +106,7 @@
             <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
           </svg>
         </button>
-        <img src="assets/images/triangle-isoceles-abc.png" alt="مثلث متساوي الساقين ABC: الرأس‎ A ‎في الأعلى، B في أسفل اليسار، C في أسفل اليمين، مع علامات التساوي على الضلعين AB و-AC">
+        <img loading="lazy" src="assets/images/triangle-isoceles-abc.png" alt="مثلث متساوي الساقين ABC: الرأس‎ A ‎في الأعلى، B في أسفل اليسار، C في أسفل اليمين، مع علامات التساوي على الضلعين AB و-AC">
       </div>
     </div>
 
@@ -231,7 +240,7 @@
               <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
             </svg>
           </button>
-          <img class="s2-diagram-img" src="assets/images/triangle-acd-adb.png" alt="المثلث ABC: الرأس‎ A ‎في الأعلى، C في أسفل اليسار، B في أسفل اليمين، مع النقطتين‎ E ‎و-D ‎ على القاعدة، بالترتيب من اليسار إلى اليمين: C, E, D, B">
+          <img loading="lazy" class="s2-diagram-img" src="assets/images/triangle-acd-adb.png" alt="المثلث ABC: الرأس‎ A ‎في الأعلى، C في أسفل اليسار، B في أسفل اليمين، مع النقطتين‎ E ‎و-D ‎ على القاعدة، بالترتيب من اليسار إلى اليمين: C, E, D, B">
         </div>
         <!-- 28% ≈ מיקומה האופקי של נקודה E (בתוך קטע CD); 67% ≈ מיקומה
              האופקי של נקודה D (בתוך קטע DB) — נמדדו ישירות מהשקף
@@ -308,7 +317,7 @@
             <path d="M13 13L17.5 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
           </svg>
         </button>
-        <img src="assets/images/paint-factory-cans.jpg" alt="علب دهان في مصنع للدهان">
+        <img loading="lazy" src="assets/images/paint-factory-cans.jpg" alt="علب دهان في مصنع للدهان">
       </div>
     </div>
 
