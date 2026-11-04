@@ -11,6 +11,19 @@ A 720 math unit (יחס, יעד 1.5) with six components, each a single-page HTM
 | 05 | 4 | `methodica-ar-math-ratio-05-05/` |
 | 06 | 6 | `methodica-ar-math-ratio-05-06/` |
 
+## Arabic twin (2026-11-04)
+Translated from the Hebrew unit at `f217369` (07.10.26, its latest commit; every behaviour of the
+Hebrew unit — pass rules, the 03 stop, the default character — is here). Learner-visible text is Arabic
+(Calibri, `lang="ar"`); the code is the Hebrew unit's apart from the strings and a few Arabic layout
+tweaks in 01/04/05 CSS and 05's check-button alignment. On top of that, 2026-11-04:
+- **Identity:** folders, slugs, metadata, character cache key are `methodica-ar-math-ratio-05…`; the id
+  prefix stays `.../720active/math/ratio/05/` (the delivered metadata uses it).
+- **No write before the restore** (`Documentation/reporting-and-resume/BOOT-AND-RESUME-HARDENING-2026-11-03.md`;
+  `_test/write-guard.js`). **The Hebrew twin still needs the same change.**
+- **Tablet drag:** 01 s2E on `unit-js/30-pointer-dnd.js` (mouse + touch + tap-to-place) and the feedback
+  popup on pointer events (`_test/touch-dnd.js`). **The Hebrew twin still needs the same change.**
+- Report dialogs in Arabic; translation fixes and open queries in `docs-and-tools/TRANSLATION-QUERIES.md`.
+
 ## Layout
 
 ```
@@ -20,12 +33,13 @@ unit-js/      shared engine, loaded by every component (declarations only, excep
                       popup/hint closing, makeScrollGestureHint(), alignBtnToLeftmost()
   20-xapi.js          item scope, answered / requested / completed helpers        (ratio-01, verbatim)
   22-scoring.js       item + component results from XAPI_Q_RESULTS and metadata, reportQ()
-  28-feedback-drag.js feedback popup clamp/reset/drag, fbCorrectShown()
+  28-feedback-drag.js feedback popup clamp/reset/drag (pointer events), fbCorrectShown()
   30-nav.js           goTo() (+ xapiOnScreen), resetScreenState(n) → resetScreenStateN(),
                       finishComponent() / backToPart() — the component's edges, bootNav()
   32-progress.js      Progress Question bar
   35-questions.js     SingleChoice (scq*) + ValueInput (viq*) engines, SCQ_CFG / VIQ_CFG
   25-report.js        issue-report dialogs → shared 720 Google Form               (ratio-01, verbatim)
+  30-pointer-dnd.js   createPointerDnd(): mouse + touch drag with tap detection (body-matter-01)
   40-resume.js        state document, 'completed' ledger, boot cover, ?resetState  (ratio-01)
   45-resume-part.js   this unit's payload: answer variables + DOM diff; applyExecutionState()
   50-loader.js        loads the 720 library from the CDN, bootXAPI()               (ratio-01, verbatim)
@@ -33,15 +47,15 @@ unit-js/      shared engine, loaded by every component (declarations only, excep
   90-boot.js          ?resetState hatch, bootNav(), bootXAPI() — always the last script
 unit-css/common.css shared rules, linked before each component's styles.css
 unit-css/25-report.css  issue-report dialogs (ratio-01's .report-* rules)
-unit-assets/  assets used by more than one component (fonts/, img/, video/)
+unit-assets/  assets used by more than one component (img/, video/; the Hebrew Assistant fonts were removed — Calibri)
 metadata/     Kata catalogue JSON (component + unit ids)
 docs/         per-component design notes (historical: written before the shared engine)
-_test/        local library stub (xapi-720-k.js) + flow.js statement-flow test — never shipped
+_test/        local library stub (xapi-720-k.js) + flow / resume / gates / write-guard / touch-dnd — never shipped
 ```
 
 Script order in every component's `index.html`:
 `10-identity → 15-ui → 20-xapi → 22-scoring → 25-report → 28-feedback-drag → 30-nav → 32-progress
-→ 35-questions → 40-resume → 45-resume-part → 50-loader → 60-devbridge → script.js → 90-boot`.
+→ 35-questions → 30-pointer-dnd → 40-resume → 45-resume-part → 50-loader → 60-devbridge → script.js → 90-boot`.
 All code references carry the same `?v=`; bump it everywhere together.
 
 ## Rules
@@ -129,8 +143,8 @@ all 720 units use (`REPORT_FIELDS` must not change) with unit / component / item
   API key) — pushing metadata to Kata was out of scope for this branch.
 
 ## Open items
-- `methodica-ar-math-ratio-05-06/assets/videos/boy-avatar-climbing.mp4` is missing (06 screen 1,
-  character-1 shows no avatar). Asset to be supplied.
+- 06 screen 1: the boy clip `boy-avatar-climbing.mp4` was never delivered; the jumping clip stands in
+  (Hebrew 053a495).
 - 06: section ג is `s2-part-5` / `s2p5` and ד is `s2-part-4` / `s2p4` (ג is above ד on screen 4). The
   mapping to `practiceProgress` and to metadata q3/q4 is correct; only the ids are confusing.
 - 06: the last screen says "השלמת את היחידה בהצלחה!" even when the component is reported as failed
