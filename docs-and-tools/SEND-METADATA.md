@@ -1,7 +1,16 @@
 > **methodica-ar-math-ratio-05 (2026-11-04):** parent-unit mode, ported from ar-ratio-04 `3c028d7`. The six
 > Arabic components are created inside the existing Hebrew unit `methodica-math-ratio-05` (`-ParentUnitKey`,
 > default that unit; read-only, one GET). `ContentBaseUrl` = `https://lomdot.education.gov.il/metodica/720/ar/math/ratio/05`,
-> `TitleLangKey` = `Arabic`. Nothing has been sent. The note below is the Hebrew unit's history.
+> `TitleLangKey` = `Arabic`. The note below is the Hebrew unit's history.
+>
+> **Sent 2026-11-04:** `-Preflight` (parent 200, 6 components 404) → live → `created=25 updated=1 failed=0`
+> (6 components, 19 items, 03 `recommendedAfterFail` → Arabic 02). `-Status` → **6/6 draft**.
+>
+> ⚠️ **DO NOT PUBLISH until MOE approves the Arabic version** (rule of 2026-11-02,
+> `Documentation/KATA/KATA-API.md` "Arabic components in a Hebrew unit"). The parent Hebrew unit is
+> already MOE-approved, so publishing these components there would approve them without MOE testing.
+> Record MOE's written approval here (date, who) before running `-Publish`. Draft components can still be
+> launched and tested.
 >
 > **methodica-math-ratio-05 (2026-09-30):** copied from methodica-science-volume-liquid-01 (the newest
 > sender; ratio-01's math copy lacks presence semantics, `-Preflight`/`-Status` and the 200/404-only
