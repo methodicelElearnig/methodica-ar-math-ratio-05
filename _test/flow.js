@@ -28,7 +28,7 @@ function trim(u) { return String(u || '').replace(/\/+$/, ''); }
   let failures = 0;
   const fail = (u, sc, msg) => { failures++; console.log(`  FAIL ${u} ${sc}: ${msg}`); };
   for (const u of UNITS) {
-    const slug = 'methodica-math-ratio-05-' + u;
+    const slug = 'methodica-ar-math-ratio-05-' + u;
     const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'metadata', slug + '.json'), 'utf8'));
     const items = {}; const qids = new Set();
     meta.subContent.forEach(s => { items[trim(s.id)] = s; (s.questions || []).forEach(q => qids.add(trim(q.questionId))); });

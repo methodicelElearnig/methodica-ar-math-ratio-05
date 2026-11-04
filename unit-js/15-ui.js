@@ -15,7 +15,7 @@
    read only as a fallback. localStorage may throw (file://, privacy modes).
    Since resume, the state document is the authority and this is a cache
    (40-resume.js: getUnitCharacter / setUnitCharacter / adoptUnitCharacter). */
-const CHARACTER_STORAGE_KEY = 'methodica_math_ratio_05_selectedCharacter';
+const CHARACTER_STORAGE_KEY = 'methodica_ar_math_ratio_05_selectedCharacter';
 const LEGACY_CHARACTER_STORAGE_KEY = 'math-ratio-01_selectedCharacter';
 const KNOWN_CHARACTER_IDS = ['character-1', 'character-2'];
 

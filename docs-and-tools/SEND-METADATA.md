@@ -1,3 +1,8 @@
+> **methodica-ar-math-ratio-05 (2026-11-04):** parent-unit mode, ported from ar-ratio-04 `3c028d7`. The six
+> Arabic components are created inside the existing Hebrew unit `methodica-math-ratio-05` (`-ParentUnitKey`,
+> default that unit; read-only, one GET). `ContentBaseUrl` = `https://lomdot.education.gov.il/metodica/720/ar/math/ratio/05`,
+> `TitleLangKey` = `Arabic`. Nothing has been sent. The note below is the Hebrew unit's history.
+>
 > **methodica-math-ratio-05 (2026-09-30):** copied from methodica-science-volume-liquid-01 (the newest
 > sender; ratio-01's math copy lacks presence semantics, `-Preflight`/`-Status` and the 200/404-only
 > existence check). `ContentBaseUrl` = `https://lomdot.education.gov.il/metodica/720/math/ratio/05`

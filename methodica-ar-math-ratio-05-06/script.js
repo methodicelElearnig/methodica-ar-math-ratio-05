@@ -166,11 +166,11 @@ function resetScreenState5() {
 }
 
 /* ═══════════════ xAPI — this component's reporting seam ═══════════════
-   Ids come from ../metadata/methodica-math-ratio-05-06.json (checked on every load by 50-loader.js).
+   Ids come from ../metadata/methodica-ar-math-ratio-05-06.json (checked on every load by 50-loader.js).
    SCREEN_TO_SUBCONTENT: screen → [item suffix, page-in-item]; exactly TOTAL_SCREENS keys. */
-var XAPI_COMP_SLUG = 'methodica-math-ratio-05-06';
+var XAPI_COMP_SLUG = 'methodica-ar-math-ratio-05-06';
 var XAPI_COMP_ID   = XAPI_ID_PREFIX + XAPI_COMP_SLUG + '/';
-var XAPI_METADATA_FILE = '../metadata/methodica-math-ratio-05-06.json';
+var XAPI_METADATA_FILE = '../metadata/methodica-ar-math-ratio-05-06.json';
 var SCREEN_TO_SUBCONTENT = { 0: ['001', 1], 1: ['001', 2], 2: ['001', 3], 3: ['001', 4], 4: ['001', 5], 5: ['001', 6] };
 var XAPI_EVAL_ITEMS = { '001': 1 };   /* items with code-graded questions */
 var XAPI_PASS_SCALED = 0.5;   /* "עליכם לענות נכון על 2 לפחות" (screen 0): 2 of 4 */

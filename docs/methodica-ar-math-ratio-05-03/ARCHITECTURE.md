@@ -534,13 +534,13 @@ character system → Cross-part persistence).
 חייבת לקרוא שמאל-לימין), אבל נוסף `dir="rtl"` **מקונן** רק סביב
 "100 ש"ח" עצמם (בסדר-מקור: מספר ואז יחידה — לא הפוך), מה שגורם
 ליחידה "לזרום" שמאלה מהמספר גם בתוך הקשר-ltr חיצוני. אותו דפוס נקודתי
-בדיוק כמו ב-`methodica-math-ratio-05-05/script.js` § `VIQ_CFG_S2_BODY`
+בדיוק כמו ב-`methodica-ar-math-ratio-05-05/script.js` § `VIQ_CFG_S2_BODY`
 (עדכון-מקביל, אותו יום — ראו שם להסבר bidi המלא).
 
 ## עדכון (07.09.2026, המשך) — יישור כפתורי "צדקתי?" ב-4 מקומות (בדיקה מקיפה)
 
 בעקבות בדיקה מקיפה על כל הסיינים (דיווח: "כפתור צדקתי במסכי הגלילה לא
-מיושר אחיד לשמאל"), נמצא ש-`methodica-math-ratio-05-03/script.js` הוא
+מיושר אחיד לשמאל"), נמצא ש-`methodica-ar-math-ratio-05-03/script.js` הוא
 היחיד שמעולם לא קיבל שום פונקציית-יישור לכפתור, בניגוד לסיינים 02/05
 (`equalizeScqOptWidths`/`s3AlignHintRow`). כל `.viq-answer-row` בפרויקט
 הזה הוא `flex-row` בלי `justify-content`, כך שהתוכן (תווית+קלט[+יחידה],
@@ -565,6 +565,6 @@ character system → Cross-part persistence).
 check`, `s5-p2/3-check`) — הם כבר תקינים (`.scq-answers`/`.tf-rows`
 ברוחב-מלא, בלי צורך ביישור).
 
-**מקבילה בסיין 1**: `methodica-math-ratio-05-01/script.js` § `s2-e-check`
+**מקבילה בסיין 1**: `methodica-ar-math-ratio-05-01/script.js` § `s2-e-check`
 תוקנה בנפרד (סיבה שונה — תוכן ממורכז, לא נדחס-ימינה) — ראו ARCHITECTURE.md
 של אותו סיין.

@@ -102,7 +102,7 @@ param(
 # Repo root is one level up: this script lives in docs-and-tools/, while the
 # key file, metadata/, metadata-from/, and the log all stay at the repo root.
 $RepoRoot = Split-Path $PSScriptRoot -Parent
-$ApiKeyFile = Join-Path $PSScriptRoot 'kata-api-key.txt'   # methodica-math-ratio-05: the key lives in docs-and-tools/ (git-ignored)
+$ApiKeyFile = Join-Path $PSScriptRoot 'kata-api-key.txt'   # methodica-ar-math-ratio-05: the key lives in docs-and-tools/ (git-ignored)
 # API base URL (override at launch with -BaseUrl).
 if (-not $BaseUrl) { $BaseUrl = 'https://kata.cet.ac.il' }
 # Where the retrieved metadata files go (override with -OutDir).
@@ -132,7 +132,7 @@ $Manufacture = $null
 # It arrived here pointing at math/percent/02, which is where this script was copied
 # from. In practice it is the THIRD fallback and is not reached while components carry
 # an IRI uniqueKey, so the wrong value never surfaced — which is exactly why it sat.
-if (-not $IdBase) { $IdBase = 'https://lomdot.education.gov.il/metodica/720active/math/ratio/05' }   # methodica-math-ratio-05 (2026-09-30)
+if (-not $IdBase) { $IdBase = 'https://lomdot.education.gov.il/metodica/720active/math/ratio/05' }   # methodica-ar-math-ratio-05 (2026-09-30)
 # The authored metadata/ that KATA is audited against (override with -MetadataDir,
 # or pass '' to skip). Not bound to $OutDir: the point is to compare the catalogue
 # with what we MEANT to publish, not with a previous retrieval of itself.

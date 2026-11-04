@@ -2,7 +2,7 @@
 // ============================================================
 //  REPORT MODAL — "מצאתם בעיה?"
 // ============================================================
-/* Shared by all six components of methodica-math-ratio-05 (ported verbatim from ratio-01). Definition-only: 90-boot.js calls initReportModal().
+/* Shared by all six components of methodica-ar-math-ratio-05 (ported verbatim from ratio-01). Definition-only: 90-boot.js calls initReportModal().
    See REPORT-ISSUE.md for what this feature is and how to give a NEW unit its own form.
 
    Per-part seams this file reads at call time, not load time:

@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 const ROOT = path.join(__dirname, '..');
-const UNITS = ['01', '02', '03', '04', '05', '06'].map(u => 'methodica-math-ratio-05-' + u);
+const UNITS = ['01', '02', '03', '04', '05', '06'].map(u => 'methodica-ar-math-ratio-05-' + u);
 let failures = 0, checks = 0;
 const ok = (cond, msg) => { checks++; if (!cond) { failures++; console.log('  FAIL ' + msg); } };
 const read = p => fs.readFileSync(path.join(ROOT, p), 'utf8');
@@ -26,7 +26,7 @@ function existsExact(rel) {
   }
   return true;
 }
-const SHIP = /^(unit-js\/[^/]+\.js|unit-css\/[^/]+\.css|unit-assets\/.+|metadata\/[^/]+\.json|methodica-math-ratio-05-0\d\/(index\.html|script\.js|styles\.css|(assets|geogbra-app|juice-store-app|chocolate-ratio-app)\/.+))$/;
+const SHIP = /^(unit-js\/[^/]+\.js|unit-css\/[^/]+\.css|unit-assets\/.+|metadata\/[^/]+\.json|methodica-ar-math-ratio-05-0\d\/(index\.html|script\.js|styles\.css|(assets|geogbra-app|juice-store-app|chocolate-ratio-app)\/.+))$/;
 
 /* Known open item (README "Open items"): reported, not failed, until the asset is supplied. */
 const KNOWN_MISSING = [];
@@ -103,7 +103,7 @@ ok(/RESUME_ENABLED = true;/.test(read('unit-js/10-identity.js')) && letters.incl
    Kata and for a screen reader. Needs jsdom on NODE_PATH; skipped (and said so) without it. */
 let JSDOM_ = null; try { JSDOM_ = require('jsdom').JSDOM; } catch (e) {}
 if (JSDOM_) {
-  const dom = new JSDOM_(read('methodica-math-ratio-05-01/index.html'), { runScripts: 'outside-only' });
+  const dom = new JSDOM_(read('methodica-ar-math-ratio-05-01/index.html'), { runScripts: 'outside-only' });
   dom.window.eval(read('unit-js/20-xapi.js') + '\nwindow.xapiAnswerText = xapiAnswerText;');   // the file is strict: export explicitly
   const pills = [...dom.window.document.querySelectorAll('#s4-pills-2 .s4-pill')];
   ok(pills.length === 3, 'F-2: 01 S4 step 2 has three fraction pills');
@@ -124,7 +124,7 @@ if (JSDOM_) {
     return m ? vm.runInNewContext('(' + m[1] + ')') : null;
   };
   const stations = u => (read(u + '/script.js').match(/const practiceProgress = \{\s*questions: \[([\s\S]*?)\]\s*\};/) || ['', ''])[1].split('number:').length - 1;
-  const U2 = 'methodica-math-ratio-05-02', U3 = 'methodica-math-ratio-05-03';
+  const U2 = 'methodica-ar-math-ratio-05-02', U3 = 'methodica-ar-math-ratio-05-03';
   const p2 = decl(U2, 'XAPI_STATION_PASS');
   ok(p2 && p2.need === num(U2, /צריך לענות נכון על (\d+) שאלות לפחות/), '02: XAPI_STATION_PASS.need = the number on s0');
   ok(stations(U2) === num(U2, /<p class="s0-line-2">(\d+) שאלות<\/p>/), '02: the station count is what s0 promises');
@@ -132,7 +132,7 @@ if (JSDOM_) {
   ok(p3 && p3.need === num(U3, /ענו נכון על (\d+) שאלות ומעלה כדי להתקדם/), '03: XAPI_STATION_PASS.need = the number on s0');
   ok(p3 && p3.of && p3.of.length === num(U3, /<p class="s0-line-2">(\d+) שאלות<\/p>/), '03: the rule counts as many questions as s0 promises');
   ok(st3 && st3.at === 3 && /id="s3-continue"[^>]*onclick="goTo\(4\)"/.test(read(U3 + '/index.html')), '03: the stop sits on s3\'s "המשך"');
-  ['01', '04', '05', '06'].forEach(c => ok(!decl('methodica-math-ratio-05-' + c, 'XAPI_STOP'), c + ': no stop declared'));
+  ['01', '04', '05', '06'].forEach(c => ok(!decl('methodica-ar-math-ratio-05-' + c, 'XAPI_STOP'), c + ': no stop declared'));
   ok(/const DEFAULT_CHARACTER = 'character-1';/.test(read('unit-js/15-ui.js')) &&
      /assetMap\[DEFAULT_CHARACTER\]/.test(read('unit-js/15-ui.js')), 'the character falls back to the default when none was chosen');
 }

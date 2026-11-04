@@ -1,15 +1,15 @@
-# methodica-math-ratio-05
+# methodica-ar-math-ratio-05 (Arabic twin of methodica-math-ratio-05)
 
 A 720 math unit (יחס, יעד 1.5) with six components, each a single-page HTML module:
 
 | Component | Screens | Folder |
 |---|---|---|
-| 01 | 7 | `methodica-math-ratio-05-01/` (+ iframe apps `geogbra-app/`, `juice-store-app/`) |
-| 02 | 5 | `methodica-math-ratio-05-02/` |
-| 03 | 6 | `methodica-math-ratio-05-03/` (+ iframe app `chocolate-ratio-app/`) |
-| 04 | 3 | `methodica-math-ratio-05-04/` |
-| 05 | 4 | `methodica-math-ratio-05-05/` |
-| 06 | 6 | `methodica-math-ratio-05-06/` |
+| 01 | 7 | `methodica-ar-math-ratio-05-01/` (+ iframe apps `geogbra-app/`, `juice-store-app/`) |
+| 02 | 5 | `methodica-ar-math-ratio-05-02/` |
+| 03 | 6 | `methodica-ar-math-ratio-05-03/` (+ iframe app `chocolate-ratio-app/`) |
+| 04 | 3 | `methodica-ar-math-ratio-05-04/` |
+| 05 | 4 | `methodica-ar-math-ratio-05-05/` |
+| 06 | 6 | `methodica-ar-math-ratio-05-06/` |
 
 ## Layout
 
@@ -78,7 +78,7 @@ all 720 units use (`REPORT_FIELDS` must not change) with unit / component / item
 
 ## Resume (Kata State API)
 - One state document per {learner, component}, addressed by `?registration`; outside Kata the
-  library falls back to `localStorage` (key `lomda_state::methodica-math-ratio-05::local::…`).
+  library falls back to `localStorage` (key `lomda_state::methodica-ar-math-ratio-05::local::…`).
 - Saved on every screen change and edit (debounced 800 ms), synchronously after every committed
   answer, on each `completed`/hint (ledger) and on leaving the page.
 - Payload (`45-resume-part.js`): the answer variables (`XAPI_Q_RESULTS`, `scqState`, `viqState`,
@@ -93,6 +93,12 @@ all 720 units use (`REPORT_FIELDS` must not change) with unit / component / item
 - `?resetState` wipes the document and the caches (QA).
 
 ## Kata catalogue
+- **Arabic twin (2026-11-04): not sent yet.** `metadata/methodica-ar-math-ratio-05-*.json` as delivered
+  (ids under the unchanged prefix `.../720active/math/ratio/05/`, slug `methodica-ar-math-ratio-05-0N`).
+  `send-metadata.ps1` now runs in parent-unit mode (from ar-ratio-04 `3c028d7`): the six Arabic
+  components join the existing Hebrew unit `methodica-math-ratio-05`, which is read, never written.
+  `hostedContentRef` base = `https://lomdot.education.gov.il/metodica/720/ar/math/ratio/05` (the
+  ar-ratio-04 convention) — confirm before the first send. The history below is the Hebrew unit's.
 - Sent **2026-09-30** as **draft** (not published): unit `methodica-math-ratio-05`, 6 components, 19
   items; 03 `recommendedAfterFail` → 02. `hostedContentRef` =
   `https://lomdot.education.gov.il/metodica/720/math/ratio/05/<component>/index.html` — the package
@@ -123,7 +129,7 @@ all 720 units use (`REPORT_FIELDS` must not change) with unit / component / item
   API key) — pushing metadata to Kata was out of scope for this branch.
 
 ## Open items
-- `methodica-math-ratio-05-06/assets/videos/boy-avatar-climbing.mp4` is missing (06 screen 1,
+- `methodica-ar-math-ratio-05-06/assets/videos/boy-avatar-climbing.mp4` is missing (06 screen 1,
   character-1 shows no avatar). Asset to be supplied.
 - 06: section ג is `s2-part-5` / `s2p5` and ד is `s2-part-4` / `s2p4` (ג is above ד on screen 4). The
   mapping to `practiceProgress` and to metadata q3/q4 is correct; only the ids are confusing.

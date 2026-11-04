@@ -197,7 +197,7 @@
 }
 .s0-avatar-wrap { margin-top: 24px; position: relative; display: flex; align-items: center; justify-content: center; }
 /* בועית-דיבור ליד הדמות — אותה טכניקה חזותית בדיוק כמו .transition-bubble
-   ב-methodica-math-ratio-05-06 (border/radius/חץ), רק ממוקמת יחסית
+   ב-methodica-ar-math-ratio-05-06 (border/radius/חץ), רק ממוקמת יחסית
    ל-.s0-avatar-wrap הממורכז כאן (לא ל-flex row צמוד כמו שם). */
 .s0-bubble {
   position: absolute;

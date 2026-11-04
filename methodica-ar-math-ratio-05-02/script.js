@@ -263,11 +263,11 @@ function resetScreenState4() {
 ['s1-feedbox', 's2-feedbox'].forEach(scqFbMakeDraggable);
 
 /* ═══════════════ xAPI — this component's reporting seam ═══════════════
-   Ids come from ../metadata/methodica-math-ratio-05-02.json (checked on every load by 50-loader.js).
+   Ids come from ../metadata/methodica-ar-math-ratio-05-02.json (checked on every load by 50-loader.js).
    SCREEN_TO_SUBCONTENT: screen → [item suffix, page-in-item]; exactly TOTAL_SCREENS keys. */
-var XAPI_COMP_SLUG = 'methodica-math-ratio-05-02';
+var XAPI_COMP_SLUG = 'methodica-ar-math-ratio-05-02';
 var XAPI_COMP_ID   = XAPI_ID_PREFIX + XAPI_COMP_SLUG + '/';
-var XAPI_METADATA_FILE = '../metadata/methodica-math-ratio-05-02.json';
+var XAPI_METADATA_FILE = '../metadata/methodica-ar-math-ratio-05-02.json';
 var SCREEN_TO_SUBCONTENT = { 0: ['001', 1], 1: ['001', 2], 2: ['002', 1], 3: ['003', 1], 4: ['004', 1] };
 var XAPI_EVAL_ITEMS = { '001': 1, '002': 1, '003': 1, '004': 1 };   /* items with code-graded questions */
 /* Pass = 2 of the 4 questions fully right (s0: "צריך לענות נכון על 2 שאלות לפחות"). MOE monday

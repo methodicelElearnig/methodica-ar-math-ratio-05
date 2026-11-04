@@ -44,7 +44,7 @@ async function screens(page) {
   let failures = 0;
   const fail = (u, msg) => { failures++; console.log(`  FAIL ${u}: ${msg}`); };
   for (const u of UNITS) {
-    const slug = 'methodica-math-ratio-05-' + u;
+    const slug = 'methodica-ar-math-ratio-05-' + u;
     const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'metadata', slug + '.json'), 'utf8'));
     const qids = new Set(); meta.subContent.forEach(s => (s.questions || []).forEach(q => qids.add(trim(q.questionId))));
     const page = await browser.newPage();
@@ -56,7 +56,7 @@ async function screens(page) {
     const style = () => page.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}' });
 
     await page.goto(url, { waitUntil: 'networkidle0' });
-    await page.evaluate(() => { __reset(); localStorage.clear(); localStorage.setItem('methodica_math_ratio_05_selectedCharacter', 'character-2'); });
+    await page.evaluate(() => { __reset(); localStorage.clear(); localStorage.setItem('methodica_ar_math_ratio_05_selectedCharacter', 'character-2'); });
     await page.goto(url, { waitUntil: 'networkidle0' });
     await ready(); await style();
     await page.evaluate(HELPERS);
