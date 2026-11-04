@@ -75,11 +75,11 @@
           "questionType": "true-false",
           "questionText": "الزاويتان α وβ - متقابلتان بالرأس، ولذلك فهما متساويتان.",
           "answers": [
-            "صحيح",
-            "غير صحيح"
+            "true",
+            "false"
           ],
           "correctAnswers": [
-            "غير صحيح"
+            "false"
           ]
         },
         {
@@ -87,11 +87,11 @@
           "questionType": "true-false",
           "questionText": "مقدار الزاوية α هو °40.",
           "answers": [
-            "صحيح",
-            "غير صحيح"
+            "true",
+            "false"
           ],
           "correctAnswers": [
-            "صحيح"
+            "true"
           ]
         },
         {
@@ -99,11 +99,11 @@
           "questionType": "true-false",
           "questionText": "مقدار الزاوية β هو 7/9 · 180° = 140°.",
           "answers": [
-            "صحيح",
-            "غير صحيح"
+            "true",
+            "false"
           ],
           "correctAnswers": [
-            "صحيح"
+            "true"
           ]
         },
         {
@@ -111,11 +111,11 @@
           "questionType": "true-false",
           "questionText": "الزاويتان α و-β  متجاورتان، ولذلك مجموعهما هو °180.",
           "answers": [
-            "صحيح",
-            "غير صحيح"
+            "true",
+            "false"
           ],
           "correctAnswers": [
-            "صحيح"
+            "true"
           ]
         }
       ]
@@ -202,11 +202,11 @@
           "questionType": "true-false",
           "questionText": "ت. اشترى شقيقان معًا بطاقة يانصيب وفازا بمبلغ 90 شيكل، ويجب أن يقسماه بنسبة 5:2 بحسب استثمارهما. هل يمكن تقسيم المبلغ بأوراق نقدية كاملة فقط (دون حاجة إلى فكّة)؟",
           "answers": [
-            "نعم",
-            "لا"
+            "true",
+            "false"
           ],
           "correctAnswers": [
-            "لا"
+            "false"
           ]
         }
       ]
