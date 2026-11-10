@@ -32,25 +32,41 @@
       "questions": [
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-001/q1",
-          "questionType": "fill-in",
+          "questionType": "performance",
           "questionText": "أ. قالب يحتوي على 50 تجويفًا، نسبة زهور الشوكولاتة الداكنة:البيضاء = 9:1. أكملوا: عدد زهور الشوكولاتة البيضاء، وعدد زهور الشوكولاتة الداكنة، وهل بقيت تجويفات فارغة.",
-          "answers": [],
+          "answers": null,
           "correctAnswers": [
-            "عدد زهور الشوكولاتة البيضاء: 5، عدد زهور الشوكولاتة الداكنة: 45، هل بقيت تجويفات فارغة: لا"
+            {"stepId": "عدد زهور الشوكولاتة البيضاء في القالب", "response": "5"},
+            {"stepId": "عدد زهور الشوكولاتة الداكنة في القالب", "response": "45"},
+            {"stepId": "هل بقيت تجويفات فارغة", "response": "لا"}
           ],
-          "xapiInteractionComponents": null,
-          "correctXapiResponsesPattern": ["عدد زهور الشوكولاتة البيضاء: 5، عدد زهور الشوكولاتة الداكنة: 45، هل بقيت تجويفات فارغة: لا"]
+          "xapiInteractionComponents": {
+            "steps": [
+              {"id": "عدد زهور الشوكولاتة البيضاء في القالب", "description": null},
+              {"id": "عدد زهور الشوكولاتة الداكنة في القالب", "description": null},
+              {"id": "هل بقيت تجويفات فارغة", "description": null}
+            ]
+          },
+          "correctXapiResponsesPattern": ["عدد زهور الشوكولاتة البيضاء في القالب[.]5[,]عدد زهور الشوكولاتة الداكنة في القالب[.]45[,]هل بقيت تجويفات فارغة[.]لا"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-001/q2",
-          "questionType": "fill-in",
+          "questionType": "performance",
           "questionText": "ب. القالب نفسه، نسبة الداكن:الأبيض = 3:1. أكملوا: عدد زهور الشوكولاتة البيضاء، وعدد زهور الشوكولاتة الداكنة، وهل بقيت تجويفات فارغة.",
-          "answers": [],
+          "answers": null,
           "correctAnswers": [
-            "عدد زهور الشوكولاتة البيضاء: 12، عدد زهور الشوكولاتة الداكنة: 36، هل بقيت تجويفات فارغة: نعم"
+            {"stepId": "عدد زهور الشوكولاتة البيضاء في القالب", "response": "12"},
+            {"stepId": "عدد زهور الشوكولاتة الداكنة في القالب", "response": "36"},
+            {"stepId": "هل بقيت تجويفات فارغة", "response": "نعم"}
           ],
-          "xapiInteractionComponents": null,
-          "correctXapiResponsesPattern": ["عدد زهور الشوكولاتة البيضاء: 12، عدد زهور الشوكولاتة الداكنة: 36، هل بقيت تجويفات فارغة: نعم"]
+          "xapiInteractionComponents": {
+            "steps": [
+              {"id": "عدد زهور الشوكولاتة البيضاء في القالب", "description": null},
+              {"id": "عدد زهور الشوكولاتة الداكنة في القالب", "description": null},
+              {"id": "هل بقيت تجويفات فارغة", "description": null}
+            ]
+          },
+          "correctXapiResponsesPattern": ["عدد زهور الشوكولاتة البيضاء في القالب[.]12[,]عدد زهور الشوكولاتة الداكنة في القالب[.]36[,]هل بقيت تجويفات فارغة[.]نعم"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-001/q3",
@@ -226,14 +242,20 @@
       "questions": [
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-004/q1",
-          "questionType": "fill-in",
+          "questionType": "performance",
           "questionText": "أ. غسلت منال وأمير سيارات في الشارع وقسما الربح (210 شيكل) بحسب نسبة ساعات عملهما (2:5). كم يحصل كل منهما؟",
-          "answers": [],
+          "answers": null,
           "correctAnswers": [
-            "منال تحصل على: 60 شيكل، أمير يحصل على: 150 شيكل"
+            {"stepId": "ستحصل منال على", "response": "60"},
+            {"stepId": "سيحصل أمير على", "response": "150"}
           ],
-          "xapiInteractionComponents": null,
-          "correctXapiResponsesPattern": ["منال تحصل على: 60 شيكل، أمير يحصل على: 150 شيكل"]
+          "xapiInteractionComponents": {
+            "steps": [
+              {"id": "ستحصل منال على", "description": null},
+              {"id": "سيحصل أمير على", "description": null}
+            ]
+          },
+          "correctXapiResponsesPattern": ["ستحصل منال على[.]60[,]سيحصل أمير على[.]150"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-004/q2",

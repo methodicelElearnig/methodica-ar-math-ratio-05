@@ -30,14 +30,22 @@
       "questions": [
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-05/methodica-ar-math-ratio-05-05-001/q1",
-          "questionType": "fill-in",
+          "questionType": "performance",
           "questionText": "أ. المثلث ABC متساوي الساقين (AB=AC)، النسبة بين زاوية الرأس ومجموع زاويتَي القاعدة هي 3:1. احسبوا زوايا المثلث الثلاث.",
-          "answers": [],
+          "answers": null,
           "correctAnswers": [
-            "∢A = 45°, ∢B = 67.5°, ∢C = 67.5°"
+            {"stepId": "∢A", "response": "45"},
+            {"stepId": "∢B", "response": "67.5"},
+            {"stepId": "∢C", "response": "67.5"}
           ],
-          "xapiInteractionComponents": null,
-          "correctXapiResponsesPattern": ["∢A = 45°, ∢B = 67.5°, ∢C = 67.5°"]
+          "xapiInteractionComponents": {
+            "steps": [
+              {"id": "∢A", "description": null},
+              {"id": "∢B", "description": null},
+              {"id": "∢C", "description": null}
+            ]
+          },
+          "correctXapiResponsesPattern": ["∢A[.]45[,]∢B[.]67.5[,]∢C[.]67.5"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-05/methodica-ar-math-ratio-05-05-001/q2",
@@ -71,14 +79,20 @@
       "questions": [
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-05/methodica-ar-math-ratio-05-05-002/q1",
-          "questionType": "fill-in",
+          "questionType": "performance",
           "questionText": "النقطة D تقع على الضلع CB في المثلث ABC. نسبة مساحتَي المثلثين ACD:ADB=3:1، مساحة المثلث ABC=64 سم²، الارتفاع AE=8 سم. أكملوا: طول الضلع CD هو: ___، طول الضلع DB هو: ___",
-          "answers": [],
+          "answers": null,
           "correctAnswers": [
-            "طول الضلع CD هو: 12 سم، طول الضلع DB هو: 4 سم"
+            {"stepId": "طول الضلع CD", "response": "12"},
+            {"stepId": "طول الضلع DB", "response": "4"}
           ],
-          "xapiInteractionComponents": null,
-          "correctXapiResponsesPattern": ["طول الضلع CD هو: 12 سم، طول الضلع DB هو: 4 سم"]
+          "xapiInteractionComponents": {
+            "steps": [
+              {"id": "طول الضلع CD", "description": null},
+              {"id": "طول الضلع DB", "description": null}
+            ]
+          },
+          "correctXapiResponsesPattern": ["طول الضلع CD[.]12[,]طول الضلع DB[.]4"]
         }
       ]
     },
@@ -91,14 +105,22 @@
       "questions": [
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-05/methodica-ar-math-ratio-05-05-003/q1",
-          "questionType": "fill-in",
+          "questionType": "performance",
           "questionText": "أ. يخلط مصنع دهانات أصفر:أزرق:أسود بنسبة 2:3:5. معروف أنه يوجد 12 لترًا من الدهان الأسود. أكملوا الكميات: ما هو عدد اللترات الإجمالي؟ كم لترًا من الأصفر؟ كم لترًا من الأزرق؟",
-          "answers": [],
+          "answers": null,
           "correctAnswers": [
-            "المجموع: 60 لترًا، أصفر: 30 لترًا، أزرق: 18 لترًا"
+            {"stepId": "المجموع", "response": "60"},
+            {"stepId": "أصفر", "response": "30"},
+            {"stepId": "أزرق", "response": "18"}
           ],
-          "xapiInteractionComponents": null,
-          "correctXapiResponsesPattern": ["المجموع: 60 لترًا، أصفر: 30 لترًا، أزرق: 18 لترًا"]
+          "xapiInteractionComponents": {
+            "steps": [
+              {"id": "المجموع", "description": null},
+              {"id": "أصفر", "description": null},
+              {"id": "أزرق", "description": null}
+            ]
+          },
+          "correctXapiResponsesPattern": ["المجموع[.]60[,]أصفر[.]30[,]أزرق[.]18"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-05/methodica-ar-math-ratio-05-05-003/q2",
