@@ -156,8 +156,9 @@ function s3P3Check() {
 
   const allCorrect = [1, 2, 3].every(function (r) { return s3TfState.selected[r] === s3TfCorrect[r]; });
   [1, 2, 3].forEach(function (r) {   /* item 003: q2..q4 are the three statements */
+    /* true/false: report the boolean picked ('true' / 'false'), not the "صحيح" label (guide §6.3b) */
     reportQ(['003', 'q' + (r + 1)], s3TfState.selected[r] === s3TfCorrect[r], allCorrect || s3TfState.attempts >= 2,
-      xapiAnswerText(document.getElementById('s3-p3-r' + r + '-' + s3TfState.selected[r])));
+      s3TfState.selected[r]);
   });
   const explain = '1. ‎إذا أصبح مقدار الزاوية <span dir="ltr">∢BAC</span> هو 100°، فإن مجموع الزاويتين الأخريين سيكون <span dir="ltr">180° − 100° = 80°</span>.<br>إذا كانت النسبة 3 : 5، فإن مقدار الزاوية الأصغر بينهما هو: <span dir="ltr"><span class="frac"><span class="frac-num">3</span><span class="frac-den">8</span></span> · 80 = 30°</span>.<br><br>2. بما أن النسبة هي 3 : 5، لكي نحصل على زوايا صحيحة، يجب أن يكون مجموع الزاويتين الأخريين قابلًا للقسمة على 8 (8 = 3 + 5).<br><br>3. إذا كان مقدار الزاوية <span dir="ltr">∢BAC</span> هو 20°، فإن مجموع الزاويتين الأخريين هو <span dir="">160° = 20 - 180</span>. بما أن النسبة هي 5 : 3، نحصل على: <br><span dir="ltr"><span class="frac"><span class="frac-num">3</span><span class="frac-den">8</span></span> · 160 = 60°</span> أو <span dir="ltr"><span class="frac"><span class="frac-num">5</span><span class="frac-den">8</span></span> · 160 = 100°</span><br>وليس على زاوية قائمة (90°).';
 
