@@ -68,6 +68,7 @@ Object.assign(VIQ_CFG, {
   },
   s2: {
     xapi: [['002', 'q1'], ['002', 'q1'], ['002', 'q2'], ['002', 'q2']],
+    xapiText: function (v, ref) { return (ref[1] === 'q1' ? 'A' : 'B') + ' (' + v[0] + ',' + v[1] + ')'; },   // Kata: 'A (5,25)'
     inputs: ['s2-a-x', 's2-a-y', 's2-b-x', 's2-b-y'], correct: [5, 25, 25, 25], checkBtn: 's2-check', feedbox: 's2-feedbox', revealBtn: 's2-reveal-btn', nextScreen: 3,
     correctMsg: { title: 'صحيح‎!', body: 'أ. النسبة بين عدد الأولاد وعدد البنات هي 5 : 1.<br>نحسب عدد الأولاد: <span dir="ltr"><span class="frac"><span class="frac-num">1</span><span class="frac-den">6</span></span> · 30 = 5</span><br>نحسب عدد البنات: <span dir="ltr"><span class="frac"><span class="frac-num">5</span><span class="frac-den">6</span></span> · 30 = 25</span><br>إحداثيّا النقطة‎ A ‎هما (5,25).<br><br>ب. في نصف الساعة الثاني انضم أولاد فقط، والنسبة الجديدة هي 1 : 1. لم يتغير عدد البنات، ولذلك أصبح عدد الأولاد الجديد 25.<br>إحداثيّا النقطة B هما (25,25).' },
     wrongOnce: { title: 'غير دقيق.', body: 'حاولوا مرة أخرى.' },
