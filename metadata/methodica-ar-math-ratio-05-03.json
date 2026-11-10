@@ -37,7 +37,9 @@
           "answers": [],
           "correctAnswers": [
             "عدد زهور الشوكولاتة البيضاء: 5، عدد زهور الشوكولاتة الداكنة: 45، هل بقيت تجويفات فارغة: لا"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["عدد زهور الشوكولاتة البيضاء: 5، عدد زهور الشوكولاتة الداكنة: 45، هل بقيت تجويفات فارغة: لا"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-001/q2",
@@ -46,7 +48,9 @@
           "answers": [],
           "correctAnswers": [
             "عدد زهور الشوكولاتة البيضاء: 12، عدد زهور الشوكولاتة الداكنة: 36، هل بقيت تجويفات فارغة: نعم"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["عدد زهور الشوكولاتة البيضاء: 12، عدد زهور الشوكولاتة الداكنة: 36، هل بقيت تجويفات فارغة: نعم"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-001/q3",
@@ -59,7 +63,15 @@
           ],
           "correctAnswers": [
             "نعم"
-          ]
+          ],
+          "xapiInteractionComponents": {
+            "choices": [
+              {"id": "نعم", "description": "نعم"},
+              {"id": "لا", "description": "لا"},
+              {"id": "لا يمكن المعرفة", "description": "لا يمكن المعرفة"}
+            ]
+          },
+          "correctXapiResponsesPattern": ["نعم"]
         }
       ]
     },
@@ -80,7 +92,9 @@
           ],
           "correctAnswers": [
             "false"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["false"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-002/q2",
@@ -92,7 +106,9 @@
           ],
           "correctAnswers": [
             "true"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["true"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-002/q3",
@@ -104,7 +120,9 @@
           ],
           "correctAnswers": [
             "true"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["true"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-002/q4",
@@ -116,7 +134,9 @@
           ],
           "correctAnswers": [
             "true"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["true"]
         }
       ]
     },
@@ -135,7 +155,9 @@
           "correctAnswers": [
             "5:7",
             "5 : 7"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["5:7", "5 : 7"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-003/q2",
@@ -149,7 +171,16 @@
           ],
           "correctAnswers": [
             "سيحصل تامر على 50 شيكل وستحصل عبير على 70 شيكل"
-          ]
+          ],
+          "xapiInteractionComponents": {
+            "choices": [
+              {"id": "سيحصل تامر على 50 شيكل وستحصل عبير على 70 شيكل", "description": "سيحصل تامر على 50 شيكل وستحصل عبير على 70 شيكل"},
+              {"id": "سيحصل تامر على 60 شيكل وستحصل عبير على 60 شيكل", "description": "سيحصل تامر على 60 شيكل وستحصل عبير على 60 شيكل"},
+              {"id": "سيحصل تامر على 70 شيكل وستحصل عبير على 50 شيكل", "description": "سيحصل تامر على 70 شيكل وستحصل عبير على 50 شيكل"},
+              {"id": "سيحصل تامر على 20 شيكل وستحصل عبير على 100 شيكل", "description": "سيحصل تامر على 20 شيكل وستحصل عبير على 100 شيكل"}
+            ]
+          },
+          "correctXapiResponsesPattern": ["سيحصل تامر على 50 شيكل وستحصل عبير على 70 شيكل"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-003/q3",
@@ -163,6 +194,25 @@
           "correctAnswers": [
             "الاقتراح غير عادل لأن عبير دفعت مبلغًا أكبر عند الشراء، ولذلك يجب أن تحصل على حصة أكبر من مبلغ الجائزة.",
             "الاقتراح غير عادل، لأن النسبة بين المبالغ التي دفعاها هي 7 : 5، والمبلغان 60 و-60 يمثلان نسبة مختلفة وهي 1 : 1."
+          ],
+          "xapiInteractionComponents": {
+            "choices": [
+              {
+                "id": "الاقتراح غير عادل لأن عبير دفعت مبلغًا أكبر عند الشراء، ولذلك يجب أن تحصل على حصة أكبر من مبلغ الجائزة.",
+                "description": "الاقتراح غير عادل لأن عبير دفعت مبلغًا أكبر عند الشراء، ولذلك يجب أن تحصل على حصة أكبر من مبلغ الجائزة."
+              },
+              {
+                "id": "الاقتراح عادل، لأنه بمجرد أن يكون هناك فوز مشترك، بغضّ النظر عن المبلغ الذي دفعه كل واحد في البداية – فالجائزة دائمًا تعود للشريكين بالتساوي تمامًا.",
+                "description": "الاقتراح عادل، لأنه بمجرد أن يكون هناك فوز مشترك، بغضّ النظر عن المبلغ الذي دفعه كل واحد في البداية – فالجائزة دائمًا تعود للشريكين بالتساوي تمامًا."
+              },
+              {
+                "id": "الاقتراح غير عادل، لأن النسبة بين المبالغ التي دفعاها هي 7 : 5، والمبلغان 60 و-60 يمثلان نسبة مختلفة وهي 1 : 1.",
+                "description": "الاقتراح غير عادل، لأن النسبة بين المبالغ التي دفعاها هي 7 : 5، والمبلغان 60 و-60 يمثلان نسبة مختلفة وهي 1 : 1."
+              }
+            ]
+          },
+          "correctXapiResponsesPattern": [
+            "الاقتراح غير عادل لأن عبير دفعت مبلغًا أكبر عند الشراء، ولذلك يجب أن تحصل على حصة أكبر من مبلغ الجائزة.[,]الاقتراح غير عادل، لأن النسبة بين المبالغ التي دفعاها هي 7 : 5، والمبلغان 60 و-60 يمثلان نسبة مختلفة وهي 1 : 1."
           ]
         }
       ]
@@ -181,7 +231,9 @@
           "answers": [],
           "correctAnswers": [
             "منال تحصل على: 60 شيكل، أمير يحصل على: 150 شيكل"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["منال تحصل على: 60 شيكل، أمير يحصل على: 150 شيكل"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-004/q2",
@@ -195,7 +247,16 @@
           ],
           "correctAnswers": [
             "كسبت منال وأمير معًا 140 شيكل، وحصلت منال على 40 شيكل"
-          ]
+          ],
+          "xapiInteractionComponents": {
+            "choices": [
+              {"id": "كسبت منال وأمير معًا 140 شيكل، وحصلت منال على 40 شيكل", "description": "كسبت منال وأمير معًا 140 شيكل، وحصلت منال على 40 شيكل"},
+              {"id": "حصلت منال على 50 شيكل، لأنها دائمًا تحصل على نصف مبلغ أمير", "description": "حصلت منال على 50 شيكل، لأنها دائمًا تحصل على نصف مبلغ أمير"},
+              {"id": "كسبت منال وأمير معًا 200 شيكل، وحصل أمير على 100 شيكل.", "description": "كسبت منال وأمير معًا 200 شيكل، وحصل أمير على 100 شيكل."},
+              {"id": "حصلت منال على 60 شيكل، والمبلغ الإجمالي الذي كسباه معًا كان 210 شيكل", "description": "حصلت منال على 60 شيكل، والمبلغ الإجمالي الذي كسباه معًا كان 210 شيكل"}
+            ]
+          },
+          "correctXapiResponsesPattern": ["كسبت منال وأمير معًا 140 شيكل، وحصلت منال على 40 شيكل"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-03/methodica-ar-math-ratio-05-03-004/q3",
@@ -207,7 +268,9 @@
           ],
           "correctAnswers": [
             "false"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["false"]
         }
       ]
     }

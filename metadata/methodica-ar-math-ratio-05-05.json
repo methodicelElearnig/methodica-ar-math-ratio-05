@@ -35,7 +35,9 @@
           "answers": [],
           "correctAnswers": [
             "∢A = 45°, ∢B = 67.5°, ∢C = 67.5°"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["∢A = 45°, ∢B = 67.5°, ∢C = 67.5°"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-05/methodica-ar-math-ratio-05-05-001/q2",
@@ -48,7 +50,15 @@
           ],
           "correctAnswers": [
             "لا"
-          ]
+          ],
+          "xapiInteractionComponents": {
+            "choices": [
+              {"id": "نعم", "description": "نعم"},
+              {"id": "لا", "description": "لا"},
+              {"id": "لا يمكن المعرفة", "description": "لا يمكن المعرفة"}
+            ]
+          },
+          "correctXapiResponsesPattern": ["لا"]
         }
       ]
     },
@@ -66,7 +76,9 @@
           "answers": [],
           "correctAnswers": [
             "طول الضلع CD هو: 12 سم، طول الضلع DB هو: 4 سم"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["طول الضلع CD هو: 12 سم، طول الضلع DB هو: 4 سم"]
         }
       ]
     },
@@ -84,7 +96,9 @@
           "answers": [],
           "correctAnswers": [
             "المجموع: 60 لترًا، أصفر: 30 لترًا، أزرق: 18 لترًا"
-          ]
+          ],
+          "xapiInteractionComponents": null,
+          "correctXapiResponsesPattern": ["المجموع: 60 لترًا، أصفر: 30 لترًا، أزرق: 18 لترًا"]
         },
         {
           "questionId": "https://lomdot.education.gov.il/metodica/720active/math/ratio/05/methodica-ar-math-ratio-05-05/methodica-ar-math-ratio-05-05-003/q2",
@@ -98,7 +112,16 @@
           ],
           "correctAnswers": [
             "النسبة الجديدة هي 4 : 3 : 5، ولذلك ازداد جزء اللون الأسود في الخليط."
-          ]
+          ],
+          "xapiInteractionComponents": {
+            "choices": [
+              {"id": "النسبة الجديدة هي 4 : 6 : 10، ولذلك تبقى درجة اللون نفسها بالضبط.", "description": "النسبة الجديدة هي 4 : 6 : 10، ولذلك تبقى درجة اللون نفسها بالضبط."},
+              {"id": "النسبة الجديدة هي 4 : 3 : 5، ولذلك ازداد جزء اللون الأسود في الخليط.", "description": "النسبة الجديدة هي 4 : 3 : 5، ولذلك ازداد جزء اللون الأسود في الخليط."},
+              {"id": "النسبة الجديدة هي 4 : 5 : 7، لأننا أضفنا وحدتين إلى كل لون للحفاظ على التوازن.", "description": "النسبة الجديدة هي 4 : 5 : 7، لأننا أضفنا وحدتين إلى كل لون للحفاظ على التوازن."},
+              {"id": "لا يمكن معرفة النسبة الجديدة بدون معرفة الكمية الدقيقة من اللترات التي أضيفت.", "description": "لا يمكن معرفة النسبة الجديدة بدون معرفة الكمية الدقيقة من اللترات التي أضيفت."}
+            ]
+          },
+          "correctXapiResponsesPattern": ["النسبة الجديدة هي 4 : 3 : 5، ولذلك ازداد جزء اللون الأسود في الخليط."]
         }
       ]
     }
