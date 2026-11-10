@@ -7,7 +7,7 @@
   "recommendedAfterFail": [
     "methodica-ar-math-ratio-05-02"
   ],
-  "isRequired": true,
+  "isRequired": false,
   "relativeDifficulty": 2,
   "masteryLevel": null,
   "order": 3,
